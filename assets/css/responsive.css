@@ -1,0 +1,104 @@
+/* Dien Thoai */
+@media (max-width:739px) {
+    #header {
+        overflow: hidden;
+    }
+
+    #nav, #nav>li {
+        display: block;
+    }
+
+    #nav>li:first-child {
+        display: inline-block;
+    }
+
+    .subnav {
+        position: initial;
+        background: #ccc;
+    }
+
+    .subnav li:hover {
+        background-color: #fff;
+    }
+
+    .btn-search {
+        display: none;
+    }
+
+    .btn-mobile-menu {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .btn-mobile-menu:hover {
+        background-color: #ccc;
+    }
+
+    .icon-mobile {
+        color: #fff;
+        font-size: 20px;
+        padding: 13px 21px;
+        font-weight: 600;
+    }
+
+    .icon-mobile:hover {
+        color: #000;
+        cursor: pointer;
+    }
+
+    .slide-content {
+        display: none;
+    }
+
+    .col-full-mobile {
+        width: 100%;
+    }
+
+    .m32-mobile {
+      margin-top: 32px;  
+    }
+
+    .pdtb16-mobile {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .pdtb8-mobile {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .full-size-mobile {
+        width: 100%;
+    }
+
+    .icon-footer {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .mb30-mobile {
+        margin-bottom: 30px;
+    }
+
+    .img-member {
+        width: 230px;
+        margin-bottom: 32px;
+    }
+}
+
+/* Ipad */
+@media (min-width:740px) and (max-width:1023px) {
+    .btn-mobile-menu {
+        display: none;
+    }
+}
+
+/* May tinh */
+@media (min-width:1024px) {
+    .btn-mobile-menu {
+        display: none;
+    }
+}

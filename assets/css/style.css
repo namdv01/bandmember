@@ -1,0 +1,460 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* css chung */
+.tac {
+    text-align: center;
+}
+
+.pdtb64 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.pdtb32 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+} 
+
+.pdtb8 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.pdlr16 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.pdlr8 {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.m10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.m15 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.row {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.row::after {
+    clear: both;
+    content: "";
+    display: block;
+
+}
+
+.col {
+    float: left;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: 33.3333%;
+}
+/*  */
+
+#main {
+
+}
+
+#header {
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav>li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav a {
+    text-decoration: none;
+    display: block;
+}
+
+#nav>li>a {
+    color: #fff;
+    line-height: 46px;
+    padding-right: 24px;
+    padding-left: 24px;
+    text-transform: uppercase;
+    font-weight: 550;
+}
+
+#nav>li:hover, .subnav li:hover {
+    background-color: #ccc;
+    
+}
+
+#nav>li:hover a, .subnav li:hover a {
+    color: #000;
+}
+
+.subnav {
+    display: none;
+    position: absolute;
+    list-style: none;
+    min-width: 160px;
+    box-shadow: 0 0 10px #000;
+    background-color: #fff;
+}
+
+.subnav a {
+    line-height: 38px;
+    padding-left: 18px;
+    
+}
+
+#nav>li:hover .subnav {
+    display: block;
+}
+
+.btn-search {
+    display: inline-block;
+    float: right;
+}
+
+.icon-search {
+    color: #fff;
+    font-size: 20px;
+    padding: 13px 21px;
+    font-weight: 600;
+}
+
+.icon-search:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#slider {
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url("../img/chicago.jpg") top center /100% no-repeat;
+    position: relative;
+    animation: replaceSlide infinite 12s;
+}
+
+.slide-content {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+.slide-head {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.slide-slogan {
+    font-size: 15px;
+}
+
+#content {
+
+}
+
+.common {
+    width: 800px;
+    max-width: calc(100%);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.content-head {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.content-slogan {
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.6;
+}
+/* Band */
+.content-desc {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.img-member {
+    width: 154px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+/* Tour */
+.border-tour {
+    background-color: #000;
+}
+
+.border-tour .common {
+    color: #fff;
+}
+
+.tour-ticket {
+    background-color: #fff;
+    color: #757575;
+    list-style: none;
+    font-size: 15px;
+}
+
+.sold-out {
+    background-color: #f44336;
+    font-size: 15px;
+    margin-left: 16px;
+    color: #fff;
+}
+
+.quantity {
+    float: right;
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.buy-btn {
+    margin-bottom: 16px;
+}
+
+.ticket {
+    list-style: none;
+    
+}
+
+.ticket-content {
+    background-color: #fff;
+    color: #000;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.img-ticket {
+    width: 100%;
+    display: block;
+}
+
+.img-ticket:hover {
+    opacity: 0.6;
+}
+
+.ticket-name {
+    padding-top: 15px;
+    font-weight: 600;
+}
+
+.ticket-time {
+    opacity: 0.6;
+}
+
+.buy-btn {
+    background-color: #000;
+    color: #fff;
+    border: 1px #ccc;
+}
+
+
+.info {
+    list-style: none;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.icon-info {
+    font-size: 22px;
+    width: 40px;
+    float: left;
+}
+
+.fill-info {
+    width: 100%;
+}
+
+.send-btn {
+    float: right;
+    background-color: #000;
+    color: #fff;
+    border: 1px #ccc;
+    height: 38px;
+    font-size: 15px;
+}
+
+.send-btn:hover, .buy-btn:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+#footer {
+    
+}
+
+.img-footer {
+    filter: grayscale(50%);
+    width: 100%;
+}
+
+.icon-footer {
+    opacity: 0.6;
+    font-size: 24px;
+}
+
+.icon-footer:hover {
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.footer-desc, .footer-desc a {
+    color: #757575;
+}
+
+.modal {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    
+}
+
+.open-modal {
+    display: flex;
+    
+}
+
+.modal-main {
+    background-color: #fff;
+    color: #000;
+    position: relative;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    animation: moveModal ease 0.5s;
+}
+
+.modal-header {
+    min-height: 130px;
+    background-color: #009688;
+    padding: 32px 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #fff;
+
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.modal-close:hover {
+    background-color: #F44336;
+    color: #757575;
+}
+
+.modal-content {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 16px;
+}
+
+.modal-label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.modal-input {
+    width: 100%;
+    margin-bottom: 24px;
+    padding: 8px;
+}
+
+.pay {
+    padding: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    width: 100%;
+    background-color: #009688;
+    border: 1px solid #ccc;
+    color: #fff;
+    font-size: 15px;
+}
+
+.pay:hover {
+    background-color: #F44336;
+    cursor: pointer;
+    color: #757575;
+}
+
+.modal-footer {
+    padding: 16px;
+    float: right;
+}
+
+.modal-footer a {
+    color:#2196F3;
+}
+
+@keyframes moveModal {
+    from {
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes replaceSlide {
+    33% {background: url(../img/nw.jpg) top center /100% no-repeat, cornflowerblue;}
+    66% {background: url(../img/ny.jpg) top center /100% no-repeat, cornflowerblue;}
+    100%  {background: url(../img/chicago.jpg) top center /100% no-repeat, cornflowerblue;}
+}
